@@ -1,0 +1,43 @@
+{
+  "name": "apv-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "JS FullStack",
+  "keywords": [
+    "backend",
+    "nodejs",
+    "express",
+    "mongodb",
+    "fullstack",
+    "api",
+    "server"
+  ],
+  "homepage": "https://github.com/JesusPineda29/apv-fullStack#readme",
+  "bugs": {
+    "url": "https://github.com/JesusPineda29/apv-fullStack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusPineda29/apv-fullStack.git"
+  },
+  "license": "ISC",
+  "author": "Jesús Pineda",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "nodemailer": "^6.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
