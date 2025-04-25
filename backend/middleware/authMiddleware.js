@@ -8,7 +8,7 @@ const checkAuth = async (req, res, next) => {
 
 
     if(req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
-        console.log('si tien el token con bearer')
+       // console.log('si tien el token con bearer')
 
         try {
             token = req.headers.authorization.split(" ")[1];

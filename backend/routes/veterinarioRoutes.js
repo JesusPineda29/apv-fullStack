@@ -1,5 +1,5 @@
 import express from 'express'
-import { registrar, perfil, confirmar, autenticar, olvidePassword, comprobarToken, nuevoPassword } from '../controllers/veterinarioControllers.js';
+import { registrar, perfil, confirmar, autenticar, olvidePassword, comprobarToken, nuevoPassword, actualizarPerfil, actualizarPassword } from '../controllers/veterinarioControllers.js';
 import checkAuth from '../middleware/authMiddleware.js';
 
 const veterinarioRoutes = express.Router();
@@ -15,6 +15,8 @@ veterinarioRoutes.post('/olvide-password/:token', nuevoPassword);
 
 // AREA PRIVADA rutas qu erequieren autenticacion
 veterinarioRoutes.get('/perfil',checkAuth, perfil);
+veterinarioRoutes.put('/perfil/:id', checkAuth, actualizarPerfil)
+veterinarioRoutes.put('/actualizar-password', checkAuth, actualizarPassword)
 
 
 
